@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cells[4][3].appendChild(createDisc("black"));
     cells[4][4].appendChild(createDisc("white"));
 
-    // ディスクを配置する関数
+    // ディスクを配置する関
     function placeDisc(row, col) {
         if (isValidMove(row, col)) {
             flipDiscs(row, col);
