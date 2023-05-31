@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>オセロ</title>
+    <style>
+        #board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 1px;
+            background-color: #006400;
+        }
+        .cell {
+            background-color: #008000;
+            cursor: pointer;
+        }
+        .black {
+            background-color: #000000;
+            border-radius: 50%;
+        }
+        .white {
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
