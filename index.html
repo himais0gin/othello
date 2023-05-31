@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>オセロ-ちょっと改良版</title>
+    <title>オセロ</title>
     <style>
         #board {
             display: grid;
@@ -14,14 +14,22 @@
         .cell {
             background-color: #008000;
             cursor: pointer;
+            position: relative;
+        }
+        .disc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 80%;
+            height: 80%;
         }
         .black {
             background-color: #000000;
-            border-radius: 50%;
         }
         .white {
             background-color: #ffffff;
-            border-radius: 50%;
         }
     </style>
 </head>
